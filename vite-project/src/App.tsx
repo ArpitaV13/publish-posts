@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="text-center text-red">
+    <div className="text-center text-red-500">
       <Routes>
         <Route path="/" element={<Feed />} />
         <Route path="/signin" element={<SignIn />} />
