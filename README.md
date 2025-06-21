@@ -1,1 +1,1 @@
-# publish-posts
+# publish-posts-on-demand
