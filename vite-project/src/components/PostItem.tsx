@@ -35,25 +35,27 @@ type PostItemProps = {
     const alertNotImplemented = () => alert("Function not implemented")
   
     return (
-      <div className="bg-white rounded-lg shadow p-4 mb-4">
-        <div className="flex items-center mb-2">
-          <img
-            src="/person.svg"
-            alt="avatar"
-            className="w-8 h-8 rounded-full mr-2"
-          />
-          <div>
-            <p className="text-sm font-semibold">{name}</p>
-            <p className="text-xs text-gray-500">{formatPostTime(time)}</p>
+      <div className="mb-4 rounded-xl shadow bg-gray-200 p-2">
+        <div className="bg-white p-4 rounded-xl">
+          <div className="flex items-center mb-2 ">
+            <img
+              src="/person.svg"
+              alt="avatar"
+              className="w-8 h-8 rounded-full mr-2"
+            />
+            <div>
+              <p className="text-sm font-semibold">{name}</p>
+              <p className="text-xs text-gray-500">{formatPostTime(time)}</p>
+            </div>
           </div>
+          <p className="text-base text-left my-3">{content}</p>
         </div>
-        <p className="text-base mb-2 text-left">{content}</p>
-        <div className="flex space-x-4 text-gray-500 text-base">
+        <div className="flex space-x-4 py-2 px-2 text-gray-500 text-base bg-gray-200">
           <button onClick={alertNotImplemented}>🤍</button>
           <button onClick={alertNotImplemented}>💬</button>
           <button onClick={alertNotImplemented}>🔗</button>
         </div>
       </div>
-    )
+    );
   }
   

@@ -21,17 +21,19 @@ export default function Feed() {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4">
+    <div className="max-w-xl mx-auto p-4 my-8">
       <PostEditor onPublish={handlePublish} />
 
-      {posts.map((post, index) => (
-        <PostItem
-          key={index}
-          name={post.name}
-          time={post.time}
-          content={post.content}
-        />
-      ))}
+      {posts
+        .sort((a, b) => b.time - a.time)
+        .map((post, index) => (
+          <PostItem
+            key={index}
+            name={post.name}
+            time={post.time}
+            content={post.content}
+          />
+        ))}
     </div>
   );
 }
