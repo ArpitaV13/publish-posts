@@ -30,9 +30,11 @@ export default function Feed() {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4 my-8">
+    <div className="p-4 my-8 max-w-xl mx-auto">
+      <h2 className="text-xl font-semibold">Your Feed</h2>
+
       <PostEditor onPublish={handlePublish} />
-    
+
       {posts.map((post, index) => (
         <PostItem
           key={index}
