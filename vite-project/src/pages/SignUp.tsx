@@ -54,7 +54,7 @@ export default function SignUp() {
           Sign Up
         </button>
         <Link
-          className="text-blue-600 hover:underline cursor-pointer"
+          className="text-green-600 hover:underline cursor-pointer"
           to="/signin"
         >
           Already a user? Sign In
