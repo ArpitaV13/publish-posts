@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   const { signup } = useAuth();
@@ -52,12 +53,12 @@ export default function SignUp() {
         <button className="w-full bg-green-600 cursor-pointer text-white py-2 rounded mb-3">
           Sign Up
         </button>
-        <a
+        <Link
           className="text-blue-600 hover:underline cursor-pointer"
-          href="/signin"
+          to="/signin"
         >
           Already a user? Sign In
-        </a>
+        </Link>
       </form>
     </div>
   );
