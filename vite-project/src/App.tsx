@@ -16,7 +16,7 @@ function App() {
     <div className="text-center">
       {isAuthenticated && (
         <div className="relative">
-          <button className="absolute top-4 right-8" onClick={handleLogout}>
+          <button className="absolute cursor-pointer top-4 right-8" onClick={handleLogout}>
             <img src="/logout.png" alt="logout" className="w-8 h-8" />
           </button>
         </div>

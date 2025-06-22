@@ -49,10 +49,13 @@ export default function SignUp() {
           className="w-full border p-2 mb-3"
           required
         />
-        <button className="w-full bg-green-600 text-white py-2 rounded mb-3">
+        <button className="w-full bg-green-600 cursor-pointer text-white py-2 rounded mb-3">
           Sign Up
         </button>
-        <a className="text-blue-600 hover:underline" href="/signin">
+        <a
+          className="text-blue-600 hover:underline cursor-pointer"
+          href="/signin"
+        >
           Already a user? Sign In
         </a>
       </form>
