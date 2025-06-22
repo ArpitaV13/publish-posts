@@ -20,7 +20,7 @@ export default function PostEditor({onPublish }: PostEditorProps) {
   return (
     <div className="bg-gray-100 p-2 rounded-lg mb-6">
       <div className="bg-white rounded-lg shadow">
-        <div className="flex items-start space-x-2 p-4">
+        <div className="flex items-start space-x-2 p-2">
           <div className="flex-1">
             <div className="flex flex-row gap-x-5 bg-gray-100 p-2 rounded-lg max-w-84">
               <select
@@ -34,31 +34,19 @@ export default function PostEditor({onPublish }: PostEditorProps) {
                 onClick={alertNotImplemented}
                 className="text-gray-600 font-bold text-base bg-white px-2 rounded-md"
               >
-                <img
-                  src="/bold-text.png"
-                  alt="bold"
-                  className="w-3 h-3"
-                />
+                <img src="/bold-text.png" alt="bold" className="w-3 h-3" />
               </button>
               <button
                 onClick={alertNotImplemented}
                 className="text-gray-600 italic text-base"
               >
-                <img
-                  src="italic-font.png"
-                  alt="italics"
-                  className="w-3 h-3"
-                />
+                <img src="italic-font.png" alt="italics" className="w-3 h-3" />
               </button>
               <button
                 onClick={alertNotImplemented}
                 className="text-gray-600 underline text-base"
               >
-                <img
-                  src="underline.png"
-                  alt="underline"
-                  className="w-3 h-3"
-                />
+                <img src="underline.png" alt="underline" className="w-3 h-3" />
               </button>
               <button
                 onClick={alertNotImplemented}
@@ -74,11 +62,7 @@ export default function PostEditor({onPublish }: PostEditorProps) {
                 onClick={alertNotImplemented}
                 className="text-gray-600 text-base"
               >
-                <img
-                  src="format.png"
-                  alt="center-align"
-                  className="w-3 h-3"
-                />
+                <img src="format.png" alt="center-align" className="w-3 h-3" />
               </button>
               <button
                 onClick={alertNotImplemented}
@@ -105,24 +89,20 @@ export default function PostEditor({onPublish }: PostEditorProps) {
             className="bg-red-100 p-2 rounded-lg cursor-pointer"
             title="Delete"
           >
-            <img
-              src="/delete.svg"
-              alt="delete"
-              className="w-5 h-5"
-            />
+            <img src="/delete.svg" alt="delete" className="w-5 h-5" />
           </button>
         </div>
         <hr className="border-t border-gray-200" />
         <div className="flex items-center justify-between px-3 py-3">
-          <div className="space-x-2 text-gray-500 text-xl">
+          <div className="space-x-2 text-gray-500 text-xl items-center flex">
             <button className="cursor-pointer" onClick={alertNotImplemented}>
-              ➕
+              <img src="/plus.png" alt="add" className="w-4 h-4" />
             </button>
             <button className="cursor-pointer" onClick={alertNotImplemented}>
-              💬
+              <img src="/chat.png" alt="add" className="w-6 h-6" />
             </button>
             <button className="cursor-pointer" onClick={alertNotImplemented}>
-              ⚙️
+              <img src="/video.png" alt="add" className="w-5 h-5" />
             </button>
           </div>
           <button

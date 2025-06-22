@@ -35,7 +35,7 @@ type PostItemProps = {
     const alertNotImplemented = () => alert("Function not implemented")
   
     return (
-      <div className="mb-4 rounded-xl shadow bg-gray-200 p-2">
+      <div className="mb-4 rounded-xl shadow bg-gray-200 p-1">
         <div className="bg-white p-4 rounded-xl">
           <div className="flex items-center mb-2 ">
             <img
@@ -50,10 +50,16 @@ type PostItemProps = {
           </div>
           <p className="text-base text-left my-3">{content}</p>
         </div>
-        <div className="flex space-x-4 py-2 px-2 text-gray-500 text-base bg-gray-200">
-          <button onClick={alertNotImplemented}>🤍</button>
-          <button onClick={alertNotImplemented}>💬</button>
-          <button onClick={alertNotImplemented}>🔗</button>
+        <div className="flex space-x-4 py-1 px-2 text-gray-500 text-base bg-gray-200">
+          <button onClick={alertNotImplemented}>
+            <img src="/heart.png" alt="avatar" className="w-5 h-5" />
+          </button>
+          <button onClick={alertNotImplemented}>
+            <img src="/chat.png" alt="avatar" className="w-8 h-8" />
+          </button>
+          <button onClick={alertNotImplemented}>
+            <img src="/send-item.png" alt="avatar" className="w-5 h-5" />
+          </button>
         </div>
       </div>
     );
